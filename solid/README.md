@@ -11,7 +11,7 @@
 
 3) L - Liskov Substitution Principle (<a href='3-liskov-substitution-principle.php'>LSP</a>)
 
-    It states that any implementation of an abstraction (interface) should be substitutable in any place that the abstraction is accepted. Basically it takes care that while coding using interfaces in our code, we not only have a contract of input that the interface receives but also the output returned by different Classes implementing that interface; they should be of same type. The principle says that objects must be replaceable by instances of their subtypes without altering the correct functioning of our system. Liskov substitution says that derived classes must be substitutable for thier base classes. 
+    It states that any implementation of an abstraction (interface) should be substitutable in any place that the abstraction is accepted. Basically while using interfaces in our code, we not only have a contract of input that the interface receives but also the output returned by different Classes implementing that interface; they should be of same type. The principle says that objects must be replaceable by instances of their subtypes without altering the correct functioning of our system. Liskov substitution says that derived classes must be substitutable for thier base classes.
 
 4) I - Interface Segregation Principle (<a href='4-interface-segregation-principle.php'>ISP</a>)
 

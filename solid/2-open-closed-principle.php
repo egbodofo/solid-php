@@ -54,7 +54,8 @@ class SalarySavingAccount implements ISavingAccount
  * Suppose we have to calculate the total area of some objects
  * and to do that we need an AreaCalculator class that does only
  * a sum of each shape area. The issue here is that each shape
- * Creation of User and storing a user should not be mixed up.
+ * The issue here is that each shape has a different method to
+ * calculate its own area..
  */
 
 // Bad Example 2

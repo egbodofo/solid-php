@@ -1,5 +1,5 @@
 <?php 
-interface fruitmixer {
+interface FruitMixer {
     public function execute($message);
 }
 

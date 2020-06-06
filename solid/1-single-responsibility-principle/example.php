@@ -2,23 +2,23 @@
 <?php
 
 class Notes {
- 
+
     function getTitle() {
         return "It's a learning process";
     }
- 
+
     function getDate() {
-      return 'It was posted today';
+    return "Today is " . date("Y/m/d") . ", Welcome back people!";
     }
- 
+
 }
- 
+
 class NoteCount {
- 
+
     function getLength() {
         return "The note has 250 characters";
     }
- 
+
 }
 
 

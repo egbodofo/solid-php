@@ -8,7 +8,7 @@ class Notes {
     }
 
     function getDate() {
-    return "Today is " . date("Y/m/d") . ", Welcome back people!";
+        return "Today is " . date("Y/m/d") . ", Welcome back people!";
     }
 
 }

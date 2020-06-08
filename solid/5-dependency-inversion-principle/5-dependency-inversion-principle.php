@@ -52,7 +52,7 @@ class PageLoader {
 
 //Example 2
 // Bad example
-// Low Level Class 
+// Low Level Class
 class PDFBook {
  
     function read() {
@@ -60,7 +60,7 @@ class PDFBook {
     }
 }
 
-// High Level Class 
+// High Level Class
 class EBookReader {
  
     private $book;

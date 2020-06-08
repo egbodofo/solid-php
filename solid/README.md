@@ -19,4 +19,4 @@
 
 5) D - Dependency Inversion Principle (<a href='5-dependency-inversion-principle/5-dependency-inversion-principle.php'>DIP</a>)
 
-    Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions.
+    Entities must depend on abstractions not on concretions. It states that the high level module must not depend on the low level module, but they should depend on abstractions. Dependencies must be done on interfaces or on abstract classes rather than on "concrete" classes.

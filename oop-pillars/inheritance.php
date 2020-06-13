@@ -2,20 +2,21 @@
 
 abstract class Shape {
 
-protected $color;
+    protected $color;
 
-public function __construct($color='red')
-{
-    $this->color = $color;
+    abstract protected function getArea();
+
+    public function __construct($color='red')
+    {
+        $this->color = $color;
+    }
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+
 }
-
-public function getColor()
-{
-    return $this->color;
-}
-
-abstract protected function getArea();
-} 
 
 class Square extends Shape{
 
@@ -26,7 +27,7 @@ public function getArea()
     return pow($this->length, 2);
 }
 
-} 
+}
 
 class Triangle extends Shape{
 protected $base = 4;
@@ -54,4 +55,4 @@ echo (new Triangle)->getArea();
 echo (new Square('green'))->getColor();
 
 $circle = new Circle;
-echo $circle->getArea(); 
+echo $circle->getArea();

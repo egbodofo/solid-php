@@ -1,30 +1,53 @@
 <?php
 
-// Low Level Class
-class PDFBook {
- 
-    function read() {
-        return "reading a pdf book.";
-    }
-}
+interface CarInterface
+{
+    public function getFuel();
 
-// High Level Class
-class EBookReader {
- 
-    private $book;
- 
-    function __construct(PDFBook $book) {
-        $this->book = $book;
-    }
- 
-    function read() {
-        return $this->book->read();
-    }
- 
+    public function shiftGear();
+
+    public function steer();
 }
 
 
-$book = new PDFBook();
-$read = new EBookReader($book);
- 
-var_dump($read->read());
+class Car implements CarInterface {
+    public function getFuel()
+    {
+        return "I use gasoline";
+    }
+
+    public function shiftGear()
+    {
+        return "I have 5 gears, use the turtle to engage and disengage";
+    }
+
+    public function steer()
+    {
+        return "Control my movement";
+    }
+}
+
+class Driver {
+    public function operate(Car $car) 
+    {
+        $car->getFuel();
+        $car->shiftGear();
+        $car->steer();
+    }
+}
+
+class ElectricCar implements CarInterface {
+
+    public function shiftGear()
+    {
+        return "I have 5 gears, use the turtle to engage and disengage";
+    }
+
+    public function steer()
+    {
+        return "Control my movement";
+    }
+}
+
+$tesla = new ElectricCar;
+var_dump($tesla->shiftGear());

@@ -29,7 +29,7 @@ class Citroen extends Car {
 }
 
 // Create objects from the child classes
-$audi = new audi("Audi");
+$audi = new Audi("Audi");
 echo $audi->intro();
 echo "<br>";
 

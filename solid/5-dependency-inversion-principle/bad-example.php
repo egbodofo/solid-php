@@ -1,6 +1,9 @@
 <?php
 
 // Example 1
+interface EBook{
+    function read();
+}
 
 // Low Level Class 1
 class PDFBook {
